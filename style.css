@@ -1,5 +1,5 @@
 /* a minimalist set of CSS resets */
-
+/* alternate green color #729b79 */
 /* default to border-box */
 html {
   box-sizing: border-box;
@@ -13,12 +13,49 @@ html {
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Archivo Black', sans-serif;
+  background-color: #f5e2c8;
 }
 
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
+.header {
+  text-align: center;
+  background: #7b9e87;
+  padding: 30px;
+  margin: 0px;
+  color: white;
 }
+
+.header2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 80px;
+}
+
+.intro-p {
+  text-align: center;
+  padding: 30px;
+}
+
+.text-container-p {
+  width: 650px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.text-container2 {
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.panther-pic {
+  margin: auto;
+  display: block;
+  width: 1000px;
+}
+
+.img-cite {
+  font-size: 13px;
+  display: block;
+}
+
