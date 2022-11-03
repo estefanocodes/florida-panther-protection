@@ -6,16 +6,19 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   background-color: #f5e2c8;
 }
+
 
 .header {
   text-align: center;
@@ -23,12 +26,14 @@ body {
   padding: 30px;
   margin: 0px;
   color: white;
+  box-shadow: -1px 2px 9px rgba(0,0,0,0.55);
+  text-shadow: -1px 2px 9px rgba(0,0,0,0.55);
 }
 
 .header2 {
   text-align: center;
   padding: 30px;
-  font-size: 80px;
+  font-size: 80px; 
 }
 
 .intro-p {
@@ -46,6 +51,7 @@ body {
   width: 800px;
   margin: auto;
   margin-top: 50px;
+  text-shadow: -1px 2px 9px rgba(0,0,0,0.20);
 }
 
 .panther-pic {
@@ -57,5 +63,42 @@ body {
 .img-cite {
   font-size: 13px;
   display: block;
+  text-align: center;
 }
 
+/* css for javascript slides */
+.hidden {
+  visibility:hidden;
+}
+
+
+/* button css */
+.info-holder {
+  position: relative;
+}
+
+.info-holder i {
+  font-size: 30px;
+  position: absolute;
+  color: #343633;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+i:hover {
+  box-shadow: 0 0 20px rgba(20, 20, 20, 0.2);
+}
+
+.left {
+  left: 10px;
+  position: sticky;
+  top: 0
+}
+
+.right {
+  right: 10px;
+  position: sticky;
+  top: 0
+}
