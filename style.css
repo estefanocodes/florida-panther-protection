@@ -1,24 +1,156 @@
 /* a minimalist set of CSS resets */
-
+/* alternate green color #729b79 */
 /* default to border-box */
 html {
   box-sizing: border-box;
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /* adjust typography defaults */
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Archivo Black", sans-serif;
+  background-color: #f5e2c8;
 }
 
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
+
+.header {
+  text-align: center;
+  background: #7b9e87;
+  padding: 30px;
+  margin: 0px;
+  color: white;
+  box-shadow: -1px 2px 9px rgba(0,0,0,0.55);
+  text-shadow: -1px 2px 9px rgba(0,0,0,0.55);
+}
+
+.header2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 80px; 
+}
+
+.headerp2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  background-color:#729b79;
+  color:white;
+  text-shadow:-1px 2px 9px rgba(0,0,0,0.55);
+  
+}
+
+.intro-p {
+  text-align: center;
+  padding: 30px;
+}
+
+.text-container-p {
+  width: 650px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.text-container2 {
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  text-shadow: -1px 2px 9px rgba(0,0,0,0.20);
+}
+
+.panther-pic {
+  margin: auto;
+  display: block;
+  width: 1000px;
+}
+
+.img-cite {
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  opacity: 40%
+}
+
+
+/* css for javascript slides */
+.hidden {
+  visibility:hidden;
+}
+
+
+/* button css */
+.info-holder {
+  position: relative;
+}
+
+.info-holder i {
+  font-size: 30px;
+  position: absolute;
+  color: #343633;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+i:hover {
+  box-shadow: 0 0 20px rgba(20, 20, 20, 0.2);
+}
+
+.left {
+  left: 10px;
+  position: sticky;
+  top: 0
+}
+
+.right {
+  right: 10px;
+  position: sticky;
+  top: 0
+}
+
+/* Resources css */
+.text-container4 {
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 20px;
+  text-shadow: -1px 2px 9px rgba(0, 0, 0, 0.2);
+}
+
+.text-container5 {
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 20px;
+  text-shadow: -1px 2px 9px rgba(0, 0, 0, 0.2);
+}
+
+.intro-p6 {
+  text-align: center;
+  padding: 10px;
+}
+
+.text-container-p6 {
+  width: 650px;
+  margin: auto;
+  margin-top: 10px;
+  font-family: serif;
+  font-style: italic;
+}
+
+/* checklist css */
+#checklist {
+  position: relative;
+  padding: 25px;
+  width: 200px;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
