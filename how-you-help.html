@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
+    
+    <!-- import html 2 canvas library -->
+    <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      defer
+    ></script>
 
     <!-- import button pngs -->
     <link
@@ -35,24 +41,41 @@
       <a href="index.html">
         <i class="bi bi-arrow-bar-left left" onclick="returnContent()"></i>
       </a>
-      <a href="placeholder.html">
-        <i class="bi bi-arrow-bar-right right" onclick="advanceContent()"></i>
-      </a>
     </div>
     <!-- end of button and extra slides html -->
 
-    <h2 class="header2 text-container2">
-      A few ways in which you can help to keep Florida's Panthers from going
-      extinct are:
+    <h2 class="headerp2 text-containerp2">
+      What you can do:
     </h2>
-
-    <p class="intro-p text-container-p">
-      The Florida Panther was placed on the extinction list in 1967 with an
-      estimated low of 10 panthers. Since they were placed on that list and a
-      habitat conservation plan was put in place in 1994 there has been an
-      increase to an estimated 200 panthers though they remain on the endangered
-      species list and placed on a 5-year review according to the Endangered
-      Species Act of 1973.
-    </p>
+    <section id="checklist">
+    <div>
+      <button class="downloadButton" onclick="downloadChecklist()">
+        Download my checklist as an image
+      </button>
+    </div>
+   
+     <!-- This is the Source 1 of Anna's Research content and takeaways -->
+    <h2 class="header2 text-container4">
+     <div>
+          <input type="checkbox" name="input1" />
+          <label for="input1">placeholder text about how to contribute</label>
+        </div>  
+    </h2>
+    
+    <h3 class="header2 text-container4">
+     <div>
+          <input type="checkbox" name="input1" />
+          <label for="input1">placeholder text about how to contribute</label>
+        </div>  
+    </h3>
+    
+    <h4 class="header2 text-container4">
+     <div>
+          <input type="checkbox" name="input1" />
+          <label for="input1">placeholder text about how to contribute</label>
+        </div>  
+    </h4>
+    </section>
+    
   </body>
 </html>
