@@ -33,3 +33,17 @@ const returnContent = () => {
     counter--;
   }
 };
+
+const downloadChecklist = () => {
+  let contentToPrint = document.querySelector("#checklist")
+  
+  html2canvas(contentToPrint, { }).then(
+  (canvas) => {
+    let a = document.createElement("a");
+    a.download = "checklist.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click();
+    }
+  );
+};
+
