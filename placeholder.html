@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
+    
+      <!-- import html 2 canvas library -->
+    <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      defer
+    ></script>
 
     <!-- import button pngs -->
     <link
@@ -35,15 +41,14 @@
       <a href="index.html">
         <i class="bi bi-arrow-bar-left left" onclick="returnContent()"></i>
       </a>
-      <a href="placeholder.html">
+      <a href="how-you-help.html">
         <i class="bi bi-arrow-bar-right right" onclick="advanceContent()"></i>
       </a>
     </div>
     <!-- end of button and extra slides html -->
 
-    <h2 class="header2 text-container2">
-      A few ways in which you can help to keep Florida's Panthers from going
-      extinct are:
+    <h2 class="headerp2 text-containerp2">
+      How we are making the effort to preserve Florida Panther population:
     </h2>
 
     <p class="intro-p text-container-p">
@@ -124,9 +129,18 @@
       likely be necessary (Thatcher et al. 2006)"
     </p>
 
-    <a href="third-page-1.html">
-      <button class="button">Source Research</button>
-    </a>
+    <div class="checklist-container">
+      <section id="checklist" class="hidden">
+        <div>
+          <input type="checkbox" name="input1" />
+          <label for="input1">Buy a pre-made costume from the store.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="input2" />
+          <label for="input2">Buy supplies for a custom costume.</label>
+        </div> 
+      </section>
+      </div>
   </body>
 </html>
-

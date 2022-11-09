@@ -36,6 +36,16 @@ body {
   font-size: 80px; 
 }
 
+.headerp2 {
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+  background-color:#729b79;
+  color:white;
+  text-shadow:-1px 2px 9px rgba(0,0,0,0.55);
+  
+}
+
 .intro-p {
   text-align: center;
   padding: 30px;
@@ -66,6 +76,7 @@ body {
   text-align: center;
   opacity: 40%
 }
+
 
 /* css for javascript slides */
 .hidden {
@@ -132,4 +143,14 @@ i:hover {
   margin-top: 10px;
   font-family: serif;
   font-style: italic;
+}
+
+/* checklist css */
+#checklist {
+  position: relative;
+  padding: 25px;
+  width: 200px;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
