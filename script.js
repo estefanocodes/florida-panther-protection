@@ -35,7 +35,7 @@ const returnContent = () => {
 };
 
 const downloadChecklist = () => {
-  let contentToPrint = document.querySelector("#checklist")
+  let contentToPrint = document.querySelector("#checklist");
   
   html2canvas(contentToPrint, { }).then(
   (canvas) => {
