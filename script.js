@@ -2,7 +2,7 @@
     to your site with Javascript */
 
 let slideIndex = 0;
-showSlides();
+
 
 function showSlides() {
   let i;
@@ -11,10 +11,12 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex > slides.length) {slideIndex = 1};
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
+
+showSlides();
 
 let counter = 1;
 
