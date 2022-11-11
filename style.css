@@ -19,6 +19,27 @@ body {
   background-color: #f5e2c8;
 }
 
+/* checklist css */
+#checklist {
+  position: relative;
+  padding: 25px;
+  width: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align:center;
+}
+
+.downloadButton {
+  position: relative;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #7b9e87;
+  color:white;
+  text-align: center;
+  left: 45%;
+}
+
 
 .header {
   text-align: center;
@@ -145,12 +166,3 @@ i:hover {
   font-style: italic;
 }
 
-/* checklist css */
-#checklist {
-  position: relative;
-  padding: 25px;
-  width: 200px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}

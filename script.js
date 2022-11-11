@@ -1,8 +1,19 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
-let slideIndex = 0;
+const downloadChecklist = () => {
+  let contentToPrint = document.querySelector("#checklist");
 
+  html2canvas(contentToPrint, {}).then((canvas) => {
+    let a = document.createElement("a");
+    a.download = "checklist.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click();
+  });
+};
+
+let slideIndex = 0;
+showSlides();
 
 function showSlides() {
   let i;
@@ -11,12 +22,12 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1};
-  slides[slideIndex-1].style.display = "block";
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
-
-showSlides();
 
 let counter = 1;
 
@@ -35,17 +46,3 @@ const returnContent = () => {
     counter--;
   }
 };
-
-const downloadChecklist = () => {
-  let contentToPrint = document.querySelector("#checklist");
-  
-  html2canvas(contentToPrint, { }).then(
-  (canvas) => {
-    let a = document.createElement("a");
-    a.download = "checklist.png";
-    a.href = canvas.toDataURL("image/png");
-    a.click();
-    }
-  );
-};
-
