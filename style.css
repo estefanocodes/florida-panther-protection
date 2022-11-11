@@ -150,5 +150,7 @@ i:hover {
   position: relative;
   padding: 25px;
   width: 200px;
-  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
